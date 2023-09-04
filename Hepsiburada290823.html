@@ -533,6 +533,82 @@
     height:44px;
 }
 
+.SuperPricesContainer{
+    margin-top: 40px;
+    width:1518px;
+    height:517px;
+    margin-left:159px;
+    margin-right:159px;
+    margin-bottom:72px;
+}
+.SuperPrices{
+    width:1200px;
+    height:445px;
+ 
+}
+.SuperPriceSuperOffer{
+
+    width:1200px;
+    height:38px;
+    margin-bottom:24px;
+
+}
+.SPSO{
+    color:rgb(72,72,72);
+    height:38px;
+    width:400px;
+    font-size:32px;
+    font-weight: 700;
+    font-family:-apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+    box-sizing:border-box;
+    letter-spacing: -1px;
+    
+    
+    
+}
+.SPSO .SPSOAllOf{
+
+        letter-spacing: 0.4px;
+        color:rgb(246,109,0);
+        width:40px;
+        height: 16px;
+        align-items: center;
+        box-sizing:border-box;
+        float:right;
+        font-size: 14px;
+        display:block;
+        padding-top:15px;
+        margin-right:7px;
+}
+
+.SuperProducts{
+display:flex;
+flex-direction:column;
+width:300px;
+padding:15px;
+border:1 px solid black;
+border-radius: 10px;
+margin:0px 20px;
+}
+
+.image-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    overflow:hidden;
+
+}
+.imgs a, .imgs{
+    width:100%;
+    height: 100%;
+    display: flex;
+}
+.product-title{
+
+    float:right;
+}
+
+
     .button{
 
         
@@ -913,17 +989,49 @@ padding-right:2em;
         <div class="ContainerImageMenu" id="Cimg">
         <div class="ImageMenu">
             <div class="Img1"><button class="button" class="buttons" id="Img" onclick="OkulAlisveris();openCity(event, 'p1');openCityImg(event, 'i1')"><img width="60px;" height="44px;" src="okulalisverisi.jfif" alt=""></button></div>
-            <div class="Img2"><button class="button" class="buttons" id="Img1" onclick="Gamer();openCity(event, 'p2');openCityImg(event, 'i2')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img3"><button class="button" class="buttons" id="Img2" onclick="Buguneozel();openCity(event, 'p3');openCityImg(event, 'i3')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img4"><button class="button" class="buttons" id="Img3" onclick="Kampanyalar();openCity(event, 'p4');openCityImg(event, 'i4')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img5"><button class="button" class="buttons" id="Img4" onclick="Kacirilmayacak();openCity(event, 'p5');openCityImg(event, 'i5')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img6"><button class="button" class="buttons" id="Img5" onclick="Teknolojik();openCity(event, 'p6');openCityImg(event, 'i6')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img7"><button class="button" class="buttons" id="Img6" onclick="Sanaozel();openCity(event, 'p7');openCityImg(event, 'i7')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
-            <div class="Img8"><button class="button" class="buttons" id="Img7" onclick="Ayricaliklar();openCity(event, 'p8');openCityImg(event, 'i8')"><img width="60px;" height="44px;"  src="" alt=""></button></div>
+            <div class="Img2"><button class="button" class="buttons" id="Img1" onclick="Gamer();openCity(event, 'p2');openCityImg(event, 'i2')"><img width="60px;" height="44px;"  src="gamer.webp" alt=""></button></div>
+            <div class="Img3"><button class="button" class="buttons" id="Img2" onclick="Buguneozel();openCity(event, 'p3');openCityImg(event, 'i3')"><img width="60px;" height="44px;"  src="bugune.jpg" alt=""></button></div>
+            <div class="Img4"><button class="button" class="buttons" id="Img3" onclick="Kampanyalar();openCity(event, 'p4');openCityImg(event, 'i4')"><img width="60px;" height="44px;"  src="kampanya.jpg" alt=""></button></div>
+            <div class="Img5"><button class="button" class="buttons" id="Img4" onclick="Kacirilmayacak();openCity(event, 'p5');openCityImg(event, 'i5')"><img width="60px;" height="44px;"  src="kacirilmayacak.jpg" alt=""></button></div>
+            <div class="Img6"><button class="button" class="buttons" id="Img5" onclick="Teknolojik();openCity(event, 'p6');openCityImg(event, 'i6')"><img width="60px;" height="44px;"  src="teknolojik.jpg" alt=""></button></div>
+            <div class="Img7"><button class="button" class="buttons" id="Img6" onclick="Sanaozel();openCity(event, 'p7');openCityImg(event, 'i7')"><img width="60px;" height="44px;"  src="sanaozel.jpg" alt=""></button></div>
+            <div class="Img8"><button class="button" class="buttons" id="Img7" onclick="Ayricaliklar();openCity(event, 'p8');openCityImg(event, 'i8')"><img width="60px;" height="44px;"  src="ayricalik.jpg" alt=""></button></div>
     
             
         </div>
 
+        </div>
+
+        <div class="SuperPricesContainer">
+            <div class="SuperPrices">
+                <div class="SuperPriceSuperOffer">
+                    <div class="SPSO"
+                    >Süper Fiyat, Süper Teklif
+                    <a class="SPSOAllOf"href="">Tümü> </a>
+                    
+
+                </div>
+                    
+
+                </div>
+                <div class="SuperProducts">
+                    <div class="image-container">
+
+                        <div class="imgs">
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+                </div>
+            </div>
         </div>
 
 
