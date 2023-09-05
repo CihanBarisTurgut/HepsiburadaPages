@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Türkiye'nin En Büyük Online Alışveriş Sitesi Hepsiburada.com</title>
     <link rel="icon" type="image/png" sizes="32x32"  href="https://images.hepsiburada.net/assets/sfstatic/Content/images/favicon-32x32-new.png">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 <style>
 
@@ -584,11 +584,28 @@
 .SuperProducts{
 display:flex;
 flex-direction:column;
-width:300px;
-padding:15px;
+width:1200px;
+padding-right:15px;
 border:1 px solid black;
 border-radius: 10px;
-margin:0px 20px;
+margin:0px 0px;
+}
+.SuperProducts i{
+    position:absolute;
+    border-radius:50%;
+    font-size:1.2rem;
+    height: 45px;
+    width: 45px;
+    background: #000;
+}
+.SuperProducts i:first-child{
+left:-23px;
+bottom:240px;
+}
+.SuperProducts i:last-child{
+   
+right:10px;
+top:120px;
 }
 
 .image-container{
@@ -596,18 +613,35 @@ margin:0px 20px;
     height:100%;
     display:flex;
     overflow:hidden;
+    position: relative;
+    text-align: center;
 
 }
 .imgs a, .imgs{
-    width:100%;
-    height: 100%;
+    width:210px;
+    height: 320px;
     display: flex;
+    margin-right:30px;
+    
+}
+.imgs{
+    
 }
 .product-title{
-
-    float:right;
+  position:relative;
+  top: 30px;
+  right:220px;
+  font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;
+  color:rgb(72,72,72);
+  font-size:12px;
+  font-weight: 400px;
 }
+.Front{
 
+    width:224px;
+    height:301px;
+
+}
 
     .button{
 
@@ -1015,16 +1049,75 @@ padding-right:2em;
 
                 </div>
                 <div class="SuperProducts">
+                    <i class="fa-solid i-fa-angle-left"></i>
                     <div class="image-container">
-
+                        
                         <div class="imgs">
+                            
                             <a href="#" >
                                 <img src="slider.jfif" class="Front" alt="">
                             </a>
                             <div class="p-box-text">
-                                <a href="#" class="product-title">Decostyle Deco&style Bambu Çamaşır Sepeti - 48 Litre</a>
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
                             </div>
                         </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <div class="imgs">
+                            
+                            <a href="#" >
+                                <img src="slider.jfif" class="Front" alt="">
+                                
+                            </a>
+                            <div class="p-box-text">
+                                <a href="#" class="product-title">Decostyle Deco&style Bambu <br> Çamaşır Sepeti - 48 Litre</a>
+                            </div>
+                        </div>
+                        <i class="fa-solid i-fa-angle-right"></i>
+
                     </div>
 
                     
@@ -1039,6 +1132,58 @@ padding-right:2em;
 
 
 <script>
+
+$(document).ready(function()
+{
+
+   
+        if($('.SuperProducts').length)
+        {
+            var viewedSlider = $('.SuperProducts');
+
+            viewedSlider.owlCarousel(
+            {
+                loop:true,
+                margin:30,
+                autoplay:true,
+                autoplayTimeout:6000,
+                nav:false,
+                dots:false,
+                responsive:
+                {
+                    0:{items:1},
+                    575:{items:2},
+                    768:{items:3},
+                    991:{items:4},
+                    1199:{items:6}
+                }
+            });
+
+            if($('.bbb_viewed_prev').length)
+            {
+                var prev = $('.bbb_viewed_prev');
+                prev.on('click', function()
+                {
+                    viewedSlider.trigger('prev.owl.carousel');
+                });
+            }
+
+            if($('.bbb_viewed_next').length)
+            {
+                var next = $('.bbb_viewed_next');
+                next.on('click', function()
+                {
+                    viewedSlider.trigger('next.owl.carousel');
+                });
+            }
+        }
+
+
+    });
+
+
+
+
 type="text/javascript"> /* Okula özel butonu sayfa yüklenirken tıklanmış halde gelir */
 document.getElementById("btn").click();
 
